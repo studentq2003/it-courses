@@ -1,0 +1,66 @@
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease-out;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+<<<<<<< HEAD
+    background-color:azure;
+=======
+    background-color: azure;
+>>>>>>> 66677e9 (first commit)
+}
+
+.content div {
+    margin: 10px;
+}
+
+<<<<<<< HEAD
+/* Стиль для раскрытого контента */
+.expanded {
+    max-height: 800px; /* Максимальная высота контента */
+=======
+.expanded {
+    max-height: 800px;
+>>>>>>> 66677e9 (first commit)
+}
+
+.content-block a,
+.content-block h2,
+.content-block p {
+    margin: 20px;
+}
+
+.flipped {
+<<<<<<< HEAD
+    transform: scaleY(-1); /* Отражает изображение по горизонтали */
+}
+
+img {
+    transition: transform 1s ease; /* Анимация для плавности поворота стрелки */
+}
+=======
+    transform: scaleY(-1);
+}
+
+img {
+    transition: transform 1s ease;
+}
+
+
+.stage {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.stage:hover {
+    transform: translateY(-10px);
+    border: 2px solid deeppink;
+    box-shadow: 5px 5px 10px deeppink;
+}
+>>>>>>> 66677e9 (first commit)

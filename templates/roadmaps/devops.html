@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0e1322">
+    <title>DevOps engineer Roadmap</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="roadmap.css">
+    <link rel="stylesheet" href="register.css">
+
+    <link rel="stylesheet" href="../no-select.css">
+
+    <link rel="stylesheet" href="../auth.css">
+    <script src="../auth.js"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- navigation block + auth block -->
+    <nav>
+        <div class="links">
+            <a href="../index.html">Start Here</a>
+<<<<<<< HEAD
+            <a href="">Courses</a>
+            <a href="">About Us</a>
+            <a href="">Contacts</a>
+=======
+            <a href="../courses/course_main.html">Courses</a>
+            <a href="../about.html">About Us</a>
+            <a href="../contacts.html">Contacts</a>
+>>>>>>> 66677e9 (first commit)
+        </div>
+
+        <div class="auth">
+            <a onclick="login()">Login</a>
+            <a class="sign-up" href="../sign-up.html">Sign up</a>
+        </div>
+
+    </nav>
+
+
+    <header>
+        <h1>DevOps Developer</h1>
+        <p>Step by step guide to becoming a modern DevOps engineer in 2024</p>
+
+    </header>
+
+    <!-- auth window -->
+    <div class="auth-window" id="auth-window">
+        <div class="hide" id="hide"></div>
+        <div class="window" id="window">
+            <div class="close-btn-container">
+                <a id="close-log" onclick="hidelogin()">×</a>
+            </div>
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="button-container" style="display: block; margin:10px;">
+                        Dont have an account?
+                        <a href="" id="signup">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- roadmap block -->
+    <div class="roadmap">
+        <div class="stage" id="part1" onclick="toggleContent('part1-content')">
+            <div class="part-block">
+                <h2>Learn a Language</h2>
+                <p>Python & Go</p>
+                <div class="content" id="part1-content">
+                    <div class="content-block">
+                        <p>Even if you’re a beginner the least you would have known is that Web Development is majorly
+                            classified into two facets: Frontend Development and Backend Development. And obviously,
+                            they
+                            both have their respective set of tools and technologies. For instance, when we talk about
+                            Frontend Development, there always comes 3 names first and foremost – HTML, CSS, and
+                            JavaScript.
+
+                            In the same way, when it comes to Backend Web Development – we primarily require a backend
+                            (or
+                            you can say server-side) programming language to make the website function along with
+                            various
+                            other tools & technologies such as databases, frameworks, web servers, etc.
+
+                            Pick a language from the given list and make sure to learn its quirks, core details about
+                            its
+                            runtime e.g. concurrency, memory model etc.
+                        </p>
+                    </div>
+                    <div class="content-block">
+                        <h2>Python</h2>
+                        <p>Python is a well known programming language which is both a strongly typed and a dynamically
+                            typed
+                            language. Being an interpreted language, code is executed as soon as it is written and the
+                            Python
+                            syntax allows for writing code in functional, procedural or object-oriented programmatic
+                            ways.
+                        </p>
+                        <a href="https://python.org">Learn more about python on official site</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>Go</h2>
+                        <p>Go is an open source programming language supported by Google. Go can be used to write cloud
+                            services, CLI tools, used for API development, and much more.
+                        </p>
+                        <a href="https://go.dev">Learn more about Go on official site</a>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+        </div>
+        <div class="stage" id="part2" onclick="toggleContent('part2-content')">
+            <div class="part-block">
+                <h2>Learn to live in Terminal</h2>
+                <p>Process monitoring, Perfomance monitoring, Network Tools</p>
+                <div class="content" id="part2-content">
+                    <div class="content-block">
+                        <h2>Live in terminal</h2>
+                        <p>A terminal is simply a text-based interface to the computer, it is use to interact with your
+                            computer system via CLI (command line interface)
+                        </p>
+                        <p>
+                            Visit the following resources to learn more:
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Command-line_interface">What is CLI?</a> <br>
+                    </div>
+                    <div class="content-block">
+                        <h2>Process Monitoring</h2>
+                        <p>A process is an instance of a computer program that is being executed. Each process is
+                            identified
+                            by a unique number called a process ID (PID). A process is a running program. The operating
+                            system tracks processes through the use of process identifiers. A process identifier (PID)
+                            is a
+                            unique number that identifies a specific process. A PID is automatically assigned to each
+                            process when it is created on the system.
+
+                            There are several linux commands that can be used to monitor processes.
+                        </p>
+                        <p>
+                            The most common ones are:
+                        </p>
+                        <ul>
+                            <li>ps - report a snapshot of the current processes.</li>
+                            <li>top - display Linux processes.</li>
+                            <li>htop - interactive process viewer.</li>
+                            <li>atop - advanced interactive monitor to view the load on a Linux system.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+        </div>
+
+
+        <div class="stage" id="part3" onclick="toggleContent('part3-content')">
+            <div class="part-block">
+                <h2>Cloud Providers</h2>
+                <p>Rest, JSON APIs, JWT, Token Auth, OAuth</p>
+                <div class="content" id="part3-content">
+                    <div class="content-block">
+                        <h2>Cloud Providers</h2>
+                        <p>Cloud providers provide a layer of APIs to abstract infrastructure and provision it based on
+                            security and billing boundaries. The cloud runs on servers in data centers, but the
+                            abstractions
+                            cleverly give the appearance of interacting with a single “platform” or large application.
+                            The
+                            ability to quickly provision, configure, and secure resources with cloud providers has been
+                            key
+                            to both the tremendous success and complexity of modern DevOps.</p>
+                    </div>
+                    <div class="content-block">
+                        <h2>AWS</h2>
+                        <p>Amazon Web Services has been the market leading cloud computing platform since 2011, ahead of
+                            Azure and Google Cloud. AWS offers over 200 services with data centers located all over the
+                            globe.
+
+                            AWS service is an online platform that provides scalable and cost-effective cloud computing
+                            solutions. It is broadly adopted cloud platform that offers several on-demand operations
+                            like
+                            compute power, database storage, content delivery and so on.
+                        </p>
+
+                        <p>
+                            Visit the following resources to learn more:
+                        </p>
+                        <a href="https://aws.amazon.com/">https://aws.amazon.com/</a> <br>
+                        <a href="https://docs.aws.amazon.com/">AWS Documentation</a> <br>
+                        <a href="https://aws.amazon.com/getting-started/cloud-essentials/">AWS Cloud Essentials</a> <br>
+                        <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html">Overview
+                            of
+                            Amazon Web Services</a> <br>
+                        <a href="https://portal.aws.amazon.com/billing/signup">Sign up for AWS</a> <br>
+                        <a href="https://cs.fyi/guide/how-to-learn-aws/">How to learn AWS</a> <br>
+                        <a
+                            href="https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_CloudPractitioner.pdf">AWS
+                            Ramp Up Guide</a> <br>
+                        <a
+                            href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials">Cloud
+                            Practitioner Essentials</a> <br>
+                        <a href="https://www.simplilearn.com/tutorials/aws-tutorial/what-is-aws">AWS Guide by
+                            SimpliLearn</a> <br>
+                        <a href="https://www.youtube.com/watch?v=k1RI5locZE4&t=129s">AWS Tutorial for Beginners</a> <br>
+                        <a
+                            href="https://www.coursera.org/learn/aws-cloud-technical-essentials?specialization=aws-devops">AWS
+                            Course for Beginners</a> <br>
+                        <a href="https://www.coursera.org/specializations/aws-devops?#courses">DevOps on AWS Course</a>
+                        <br>
+                        <a href="https://youtu.be/SOTamWNgDKc">AWS Practitioner</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>Google Cloud</h2>
+                        <p>Google Cloud is Google’s cloud computing service offering, providing over 150
+                            products/services
+                            to choose from. It consists of a set of physical assets, such as computers and hard disk
+                            drives,
+                            and virtual resources, such as virtual machines(VMs), that are contained in Google’s data
+                            centers. It runs on the same infrastructure that Google uses internally for its end-user
+                            products, such as Search, Gmail, Google Drive, and YouTube.
+                        </p>
+                        <a href="https://cloud.google.com/">Google Cloud Website</a> <br>
+                        <a href="https://cloud.google.com/docs">Official Documentation</a> <br>
+                        <a href="https://cloud.google.com/docs/get-started/">Google Cloud Get Started Guide</a> <br>
+                        <a
+                            href="https://www.coursera.org/profesAzure Websitesional-certificates/cloud-engineering-gcp#courses">Coursera
+                            Complete Course for Google Cloud</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>Azure</h2>
+                        <p>Microsoft Azure is a cloud computing service operated by Microsoft. Azure currently provides
+                            more
+                            than 200 products and cloud services.
+                        </p>
+                        <p>
+                            Visit the following resources to learn more:
+                        </p>
+                        <a href="https://azure.microsoft.com/en-us/">Azure Website</a>
+                        <a href="https://docs.microsoft.com/en-us/azure/">Official Documentation</a>
+                        <a href="https://azure.microsoft.com/en-ca/get-started/#explore-azure">Azure Get Started
+                            Guide</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+        </div>
+
+
+        <div class="stage" id="part4" onclick="toggleContent('part4-content')">
+            <div class="part-block">
+                <h2>CI/CD</h2>
+                <p>Gitlab CI, Circle CI, Jenkins, GitHub Actions</p>
+                <div class="content" id="part4-content">
+                    <div class="content-block">
+                        <h2>CI/CD</h2>
+                        <p>CI/CD is a method to frequently deliver apps to customers by introducing automation into the
+                            stages of app development. The main concepts attributed to CI/CD are continuous integration,
+                            continuous delivery, and continuous deployment. CI/CD is a solution to the problems
+                            integrating
+                            new code can cause for development and operations teams.
+
+                            Specifically, CI/CD introduces ongoing automation and continuous monitoring throughout the
+                            lifecycle of apps, from integration and testing phases to delivery and deployment. Taken
+                            together, these connected practices are often referred to as a “CI/CD pipeline” and are
+                            supported by development and operations teams working together in an agile way with either a
+                            DevOps or site reliability engineering (SRE) approach.
+                        </p>
+                    </div>
+                    <div class="content-block">
+                        <h2>GitLab CI</h2>
+                        <p>GitLab offers a CI/CD service that can be used as a SaaS offering or self-managed using your
+                            own
+                            resources. You can use GitLab CI with any GitLab hosted repository, or any BitBucket Cloud
+                            or
+                            GitHub repository in the GitLab Premium self-managed, GitLab Premium SaaS and higher tiers.
+                        </p>
+                        <p>Visit the following resources to learn more:
+                        </p>
+                        <a href="https://gitlab.com/">GitLab Website</a> <br>
+                        <a href="https://docs.gitlab.com/">GitLab Documentation</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>Jenkins</h2>
+                        <p>Jenkins is an open-source CI/CD automation server. Jenkins is primarily used for building
+                            projects, running tests, static code analysis and deployments.
+                        </p>
+                        <p>Visit the following resources to learn more:
+                        </p>
+                        <a href="https://www.jenkins.io/">Jenkins Website</a> <br>
+                        <a href="https://www.jenkins.io/doc/book/">Official Jenkins Handbook</a> <br>
+                        <a href="https://www.jenkins.io/doc/pipeline/tour/getting-started/">Jenkins Getting Started
+                            Guide</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="reg-container">
+        <div class="register">
+            <h2>Let's start DevOps engineer career!</h2>
+            <p>Make a form and register to IT course of DevOps engineer Developer</p>
+
+            <div class="reg-block">
+                <p>Your first name:</p>
+                <input type="text" name="" id="firstname">
+            </div>
+            <div class="reg-block">
+                <p>Your last name:</p>
+                <input type="text" name="" id="lastname">
+            </div>
+
+            <div class="reg-block">
+                <p>Your mail:</p>
+                <input type="text" name="" id="mail">
+            </div>
+
+            <div class="reg-block">
+                <p>Select your lvl:</p>
+                <select name="lvl" id="frontend-lvl">
+                    <option value="junior">junior</option>
+                    <option value="middle">middle</option>
+                    <option value="middlep">middle+</option>
+                    <option value="senior">senior</option>
+                </select>
+            </div>
+
+            <a id="reg-button" align="center" href="">Register</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

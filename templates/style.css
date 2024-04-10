@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14, 19, 34);
+}
+
+header {
+    margin: 20px;
+    margin-top: 10vmin;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+}
+
+h1 {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #b987ee 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+}
+
+header p {
+    color: rgb(148, 148, 148);
+}
+
+
+
+.roadmaps {
+    margin-top: 10vmin;
+    display: flex;
+    flex-flow: row wrap;
+    width: 105vmin;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.roadmaps a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 5px;
+    background-color: rgb(17, 23, 41);
+    width: 30vmin;
+    text-align: left;
+    padding: 10px;
+    border: 0.2px solid grey;
+    border-radius: 4px;
+    color: gray;
+<<<<<<< HEAD
+=======
+
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+>>>>>>> 66677e9 (first commit)
+}
+
+.roadmaps a:hover {
+    border: 0.3px solid azure;
+<<<<<<< HEAD
+}
+
+.roadmaps .disabled-link:hover {
+    border: 0.3px solid rgb(255, 0, 0);
+=======
+    transform: translateY(-10px);
+    color: rgb(0, 0, 0);
+    background-color: greenyellow;
+    border: 2px solid deeppink;
+    box-shadow: 10px 10px 20px deeppink;
+}
+
+.roadmaps .disabled-link:hover {
+    border: 0.3px solid rgb(133, 20, 20);
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 10px rgb(67, 41, 123);
+    background-color: rgba(255, 0, 0, 0.591);
+    color: aliceblue;
+>>>>>>> 66677e9 (first commit)
+}

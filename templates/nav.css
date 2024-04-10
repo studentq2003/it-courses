@@ -1,0 +1,69 @@
+nav {
+    background-color: #0e1322;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+<<<<<<< HEAD
+    padding: 10px;
+=======
+    padding: 20px;
+>>>>>>> 66677e9 (first commit)
+}
+
+.links,
+.auth {
+    margin: 10px;
+}
+
+nav a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: grey;
+    margin: 10px;
+    padding: 10px;
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+>>>>>>> 66677e9 (first commit)
+}
+
+nav .auth a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: blue;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    color: deeppink;
+    background-color: gray;
+    border-radius: 6px;
+<<<<<<< HEAD
+=======
+
+    border: 0.3px solid azure;
+    transform: translateY(-5px);
+    border: 2px solid deeppink;
+    box-shadow: 5px 5px 10px deeppink;
+>>>>>>> 66677e9 (first commit)
+}
+
+.auth a:hover {
+    background-color: darkblue;
+    color: deeppink;
+<<<<<<< HEAD
+=======
+
+    border: 0.3px solid azure;
+    transform: translateY(-5px);
+    border: 2px solid deeppink;
+    box-shadow: 5px 5px 10px deeppink;
+>>>>>>> 66677e9 (first commit)
+}

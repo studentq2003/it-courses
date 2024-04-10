@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0e1322">
+
+    <title>Courses</title>
+
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../auth.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="../no-select.css">
+
+    <link rel="stylesheet" href="modal.css">
+
+    <script src="../auth.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- navigation + auth block -->
+    <nav>
+        <div class="links">
+            <a href="../index.html">Start Here</a>
+            <a href="course_main.html">Courses</a>
+<<<<<<< HEAD
+            <a href="">About Us</a>
+            <a href="">Contacts</a>
+=======
+            <a href="../about.html">About Us</a>
+            <a href="../contacts.html">Contacts</a>
+>>>>>>> 66677e9 (first commit)
+        </div>
+
+        <div class="auth">
+            <a onclick="login()">Login</a>
+            <a class="sign-up" href="../sign-up.html">Sign up</a>
+        </div>
+
+    </nav>
+
+    <!-- auth window -->
+    <div class="auth-window" id="auth-window">
+        <div class="hide" id="hide"></div>
+        <div class="window" id="window">
+            <div class="close-btn-container">
+                <a id="close-log" onclick="hidelogin()">×</a>
+            </div>
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="button-container" style="display: block; margin:10px;">
+                        Dont have an account?
+                        <a href="" id="signup">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header>
+<<<<<<< HEAD
+        <h1>Course page</h1>
+=======
+        <h1>Course Page</h1>
+>>>>>>> 66677e9 (first commit)
+    </header>
+
+    <main>
+        <div class="course-container">
+            <div class="course-block" id="Java" onclick="openModal('modalJava')">
+                <img src="../content/java.png" alt="Java Course">
+                <div class='description'>
+                    <h2>Java</h2>
+                    <p>JDK, JDBC, RMI, Hibernate ORM</p>
+                </div>
+            </div>
+
+
+            <div class="course-block" id="Python" onclick="openModal('modalPython')">
+                <img src="../content/python.png" alt="Python Course">
+                <div class='description'>
+                    <h2>Python</h2>
+                    <p>Basics, Django, FastAPI</p>
+                </div>
+            </div>
+            <div class="course-block" id="Frontend" onclick="openModal('modalFrontend')">
+                <img src="../content/frontend.png" alt="Frontend Course">
+                <div class='description'>
+                    <h2>Frontend</h2>
+                    <p>HTML, CSS, JS, UX-design</p>
+                </div>
+            </div>
+            <div class="course-block" id="Backend" onclick="openModal('modalBackend')">
+                <img src="../content/backend.png" alt="Backend Course">
+                <div class='description'>
+                    <h2>Backend</h2>
+                    <p>Django, Go, PostgreSQL, Nginx</p>
+                </div>
+            </div>
+            <div class="course-block" id="DevOps">
+                <img src="../content/devops.png" alt="DevOps Course" onclick="openModal('modalDevOps')">
+                <div class='description'>
+                    <h2>DevOps</h2>
+                    <p>Docker, Kubernetes, Terraform, Clouds, Gitlab</p>
+                </div>
+            </div>
+            <div class="course-block">
+                <img src="../content/qa.png" alt="QA Course" onclick="openModal('modalQA')">
+                <div class='description'>
+                    <h2>QA</h2>
+                    <p>Test, code rewiews</p>
+                </div>
+            </div>
+            <!-- <div class="course-block">
+                <img src="../content/.png" alt="Name Course">
+                <div class='description'>
+                    <h2>Course</h2>
+                    <p>Description</p>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- MODAL BLOCKS -->
+        <div id="modalJava" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalJava')">&times;</span>
+                <h2>Comprehensive Java Programming</h2>
+                <p>Dive into the world of Java programming with our Comprehensive Java Programming course, designed for
+                    students of all levels seeking to master this robust, versatile language. Whether you're a complete
+                    beginner or looking to sharpen your skills, this course offers a deep dive into Java's core
+                    concepts, practical applications, and advanced features.
+                </p>
+                <p>Throughout this course, you will:</p>
+                <ul>
+                    <li><b>Learn the Fundamentals:</b> Start from the basics of Java syntax, data types, operators, and
+                        control
+                        flow to build a strong foundation.</li>
+                    <li><b>Object-Oriented Programming (OOP):</b> Understand the principles of OOP including classes,
+                        objects,
+                        inheritance, encapsulation, and polymorphism to create modular, scalable, and maintainable code.
+                    </li>
+                    <li><b>Exception Handling and I/O:</b> Get hands-on experience with Java's error handling mechanisms
+                        and
+                        learn to manage files, directories, and streams for comprehensive data manipulation.</li>
+                    <li><b>Multithreading and Concurrency:</b> Explore Java's multithreading capabilities to execute
+                        multiple
+                        tasks simultaneously, improving the performance of complex applications.</li>
+                    <li><b>Java Development Tools:</b> Familiarize yourself with Java development environments like
+                        IntelliJ
+                        IDEA and Eclipse, and build tools such as Maven and Gradle.</li>
+                    <li><b>JavaFX for UI Design:</b> Learn to create visually stunning user interfaces with JavaFX,
+                        implementing event-driven programming to make interactive applications.</li>
+                    <li><b>Advanced Java Features:</b> Dive into advanced topics such as generics, collections
+                        framework,
+                        lambda expressions, and the Stream API for efficient data processing.</li>
+                    <li><b>Real-World Projects:</b> Apply what you've learned in practical projects that simulate
+                        real-world
+                        scenarios, enhancing your problem-solving skills and readiness for professional Java
+                        development.</li>
+                    <li><b>Career Readiness and Java Certification Preparation:</b> Receive guidance on building a Java
+                        developer's career, preparing for job interviews, and tips for Oracle Java certifications.</li>
+                </ul>
+                <p><b>Who Should Enroll:</b></p>
+                <ul>
+                    <li>Beginners who wish to learn Java from scratch.</li>
+                    <li>Intermediate programmers aiming to solidify their Java skills.</li>
+                    <li>Advanced Java developers seeking to update their knowledge with the latest Java features.</li>
+                    <li>Professionals preparing for Java certification exams.</li>
+                </ul>
+                <p><b>Course Format:</b></p>
+                <p>This online course is self-paced, featuring a mix of video lectures, interactive coding exercises,
+                    peer-reviewed assignments, and real-world projects to ensure comprehensive understanding and
+                    application of Java programming. Students will have access to online forums for peer interaction,
+                    Q&A sessions with instructors, and comprehensive support to aid their learning journey.</p>
+                <p>Enroll today to start your journey into Java programming, a skill that opens doors to countless
+                    opportunities in the tech industry.</p>
+            </div>
+        </div>
+
+        <div id="modalPython" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalPython')">&times;</span>
+                <h2>Mastering Python Programming</h2>
+                <p>Embark on a journey to mastering Python, one of the most sought-after programming languages in the
+                    tech industry, with our comprehensive course designed for learners at all levels. From the very
+                    basics to advanced concepts, this course is your pathway to becoming proficient in Python, whether
+                    you're starting from scratch or aiming to enhance your coding skills.</p>
+                <h2>Mastering Python Programming</h2>
+                <p>Embark on a journey to mastering Python, one of the most sought-after programming languages in the
+                    tech industry, with our comprehensive course designed for learners at all levels. From the very
+                    basics to advanced concepts, this course is your pathway to becoming proficient in Python, whether
+                    you're starting from scratch or aiming to enhance your coding skills.</p>
+
+                <h3>Throughout this course, you will:</h3>
+                <ul>
+                    <li><strong>Understand Python Basics</strong>: Begin with Python syntax, data types, variables, and
+                        basic operators to lay the groundwork for more complex topics.</li>
+                    <li><strong>Control Structures</strong>: Learn to control the flow of your programs with conditional
+                        statements, loops, and exception handling for robust coding practices.</li>
+                    <li><strong>Functions and Modules</strong>: Dive into functions for reusable code and modules to
+                        organize your projects more effectively.</li>
+                    <li><strong>Object-Oriented Programming (OOP)</strong>: Grasp the fundamentals of OOP in Python to
+                        create reusable and modular code using classes and objects.</li>
+                    <li><strong>Data Handling</strong>: Master Python’s powerful libraries for data manipulation and
+                        analysis, including NumPy, pandas, and Matplotlib for data visualization.</li>
+                    <li><strong>Web Development</strong>: Get introduced to web development with Python using frameworks
+                        like Flask and Django, learning to create dynamic web applications.</li>
+                    <li><strong>Automation and Scripting</strong>: Learn how Python can automate mundane tasks, from
+                        file manipulation to web scraping with Beautiful Soup.</li>
+                    <li><strong>Advanced Python Concepts</strong>: Explore advanced topics such as decorators,
+                        generators, multithreading, and multiprocessing to handle concurrent processes.</li>
+                    <li><strong>Real-World Projects</strong>: Apply your knowledge to real-world projects that cover
+                        areas such as data analysis, web development, and automation to build your portfolio.</li>
+                    <li><strong>Career Preparation and Python Certification Guidance</strong>: Receive tips on how to
+                        build a career in Python development, prepare for job interviews, and information on Python
+                        certification paths.</li>
+                </ul>
+
+                <h3>Who Should Enroll:</h3>
+                <ul>
+                    <li>Individuals new to programming who wish to start with Python.</li>
+                    <li>Programmers in other languages looking to switch or expand their skills to Python.</li>
+                    <li>Data analysts, scientists, and anyone interested in data exploration and visualization.</li>
+                    <li>Web developers seeking to learn Python for back-end development.</li>
+                    <li>Professionals and students preparing for Python certification exams.</li>
+                </ul>
+
+                <h3>Course Format:</h3>
+                <p>This is an online, self-paced course featuring a blend of video lectures, interactive coding
+                    challenges, and extensive support from instructors and peers within the course forum. Enroll today
+                    to kickstart your journey into Python programming and open up new career opportunities.</p>
+            </div>
+        </div>
+
+        <div id="modalFrontend" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalFrontend')">&times;</span>
+                <h2>Frontend Development Mastery</h2>
+                <p>Dive into the world of frontend development with our comprehensive course designed for aspiring
+                    developers of all levels. This course will guide you through the basics to advanced concepts of
+                    frontend development, equipping you with the skills needed to create dynamic, responsive websites
+                    and applications.</p>
+
+                <h3>Throughout this course, you will:</h3>
+                <ul>
+                    <li><strong>HTML & CSS Foundations</strong>: Start with the building blocks of web development to
+                        create structurally sound and visually appealing websites.</li>
+                    <li><strong>JavaScript Essentials</strong>: Dive deep into JavaScript, learning to add
+                        interactivity, control data, and manipulate the DOM.</li>
+                    <li><strong>Responsive Web Design</strong>: Master the art of creating websites that look great on
+                        any device, using flexbox, grid, and media queries.</li>
+                    <li><strong>Frontend Frameworks</strong>: Explore popular frameworks such as React, Vue, or Angular
+                        to speed up development and enhance user experience.</li>
+                    <li><strong>State Management</strong>: Understand state management patterns and tools to manage
+                        complex data and UI states efficiently.</li>
+                    <li><strong>Building RESTful Services</strong>: Learn to connect your frontend to backend services
+                        using REST API for dynamic content.</li>
+                    <li><strong>Version Control with Git</strong>: Use Git for version control to manage and collaborate
+                        on projects with ease.</li>
+                    <li><strong>Modern Tooling</strong>: Get hands-on with modern development tools and workflows,
+                        including Webpack, Babel, and npm.</li>
+                    <li><strong>Accessibility and Web Standards</strong>: Ensure your websites are accessible to all
+                        users, following best practices and web standards.</li>
+                    <li><strong>Real-World Projects</strong>: Apply your skills on real-world projects that cover a wide
+                        range of scenarios, from single-page applications to responsive web designs.</li>
+                </ul>
+
+                <h3>Who Should Enroll:</h3>
+                <ul>
+                    <li>Aspiring web developers seeking to start or advance their careers in frontend development.</li>
+                    <li>Backend developers looking to expand their skill set to full-stack development.</li>
+                    <li>Designers interested in learning to implement their designs as live websites.</li>
+                    <li>Students and professionals looking to upskill and stay current with the latest in web
+                        development.</li>
+                </ul>
+
+                <h3>Course Format:</h3>
+                <p>This online, self-paced course features a mix of video lectures, interactive coding exercises,
+                    peer-reviewed assignments, and real-world project work. Comprehensive support from instructors and
+                    peers within the course forum is available to ensure your success. Enroll now to begin your journey
+                    to becoming a skilled frontend developer.</p>
+            </div>
+        </div>
+
+        <div id="modalBackend" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalBackend')">&times;</span>
+                <h2>Backend Development Mastery</h2>
+                <p>Step into the server-side of web development with our Backend Development Mastery course, designed to
+                    transform beginners into skilled backend developers. This course covers the essential and advanced
+                    topics of backend development, preparing students to build robust, efficient, and secure web
+                    applications.</p>
+
+                <h3>Throughout this course, you will:</h3>
+                <ul>
+                    <li><strong>Programming Fundamentals</strong>: Refresh your understanding of core programming
+                        concepts using a backend-focused language such as Python, Ruby, or Node.js.</li>
+                    <li><strong>Database Management</strong>: Learn to design, query, and manage databases using SQL and
+                        NoSQL databases like MySQL, PostgreSQL, MongoDB, and Firebase.</li>
+                    <li><strong>API Development</strong>: Master the art of creating RESTful and GraphQL APIs for
+                        seamless communication between the frontend and backend.</li>
+                    <li><strong>Server Management</strong>: Understand server management, deployment, and the use of
+                        containerization tools like Docker and Kubernetes.</li>
+                    <li><strong>Authentication & Authorization</strong>: Implement secure authentication and
+                        authorization strategies to protect user data and access control.</li>
+                    <li><strong>Scalable Architecture</strong>: Design scalable and maintainable architectures using
+                        microservices and serverless computing concepts.</li>
+                    <li><strong>Testing and Debugging</strong>: Develop skills in writing test cases and using debugging
+                        tools for backend applications to ensure reliability and quality.</li>
+                    <li><strong>Performance Optimization</strong>: Learn techniques to optimize application performance,
+                        including caching, database indexing, and load balancing.</li>
+                    <li><strong>Cloud Services</strong>: Gain practical experience with cloud computing platforms like
+                        AWS, Azure, or Google Cloud to deploy and manage applications.</li>
+                    <li><strong>Real-World Projects</strong>: Tackle real-world projects that simulate professional
+                        backend development scenarios, from API development to cloud deployment.</li>
+                </ul>
+
+                <h3>Who Should Enroll:</h3>
+                <ul>
+                    <li>Aspiring developers looking to specialize in backend web development.</li>
+                    <li>Frontend developers aiming to become full-stack developers by mastering backend technologies.
+                    </li>
+                    <li>IT professionals seeking to transition into backend development roles.</li>
+                    <li>Students and self-learners interested in building scalable, high-performance web applications.
+                    </li>
+                </ul>
+
+                <h3>Course Format:</h3>
+                <p>This is an online, self-paced course that includes video lectures, coding exercises, peer-reviewed
+                    assignments, and capstone projects. Participants will also have access to a dedicated forum for
+                    support from instructors and peers, facilitating a collaborative and engaging learning experience.
+                    Enroll today to start your backend development journey.</p>
+            </div>
+        </div>
+
+        <div id="modalDevOps" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalDevOps')">&times;</span>
+                <h2>DevOps Mastery: From Development to Deployment</h2>
+                <p>Unlock the full potential of DevOps practices with our comprehensive course, designed to take you
+                    from the basics of development and operations to mastering advanced deployment techniques. This
+                    course is tailored for individuals who aspire to bridge the gap between software development and IT
+                    operations, ensuring faster, scalable, and reliable software delivery.</p>
+
+                <h3>Throughout this course, you will:</h3>
+                <ul>
+                    <li><strong>DevOps Foundations</strong>: Understand the philosophy, practices, and tools that make
+                        up the DevOps lifecycle, from coding and deployment to maintenance and updates.</li>
+                    <li><strong>Continuous Integration and Continuous Deployment (CI/CD)</strong>: Learn to automate the
+                        integration and deployment process using tools like Jenkins, Travis CI, and GitLab CI.</li>
+                    <li><strong>Infrastructure as Code (IaC)</strong>: Master the art of managing and provisioning
+                        infrastructure through code using tools like Terraform, Ansible, and Puppet.</li>
+                    <li><strong>Containerization and Orchestration</strong>: Dive into Docker for containerization and
+                        Kubernetes for orchestration to manage containers at scale.</li>
+                    <li><strong>Monitoring and Logging</strong>: Implement monitoring and logging solutions like
+                        Prometheus, Grafana, ELK Stack, and Splunk to ensure performance and troubleshoot issues.</li>
+                    <li><strong>Cloud Computing</strong>: Gain practical experience with major cloud platforms like AWS,
+                        Azure, and Google Cloud Platform, leveraging their services for DevOps practices.</li>
+                    <li><strong>Security Practices</strong>: Integrate security into the DevOps process, focusing on
+                        practices like DevSecOps to protect applications and data.</li>
+                    <li><strong>Team Collaboration and Tools</strong>: Enhance collaboration between development and
+                        operations teams using tools like Slack, JIRA, and Confluence.</li>
+                    <li><strong>Performance Tuning and Optimization</strong>: Learn strategies for tuning and optimizing
+                        system performance to handle load and scalability efficiently.</li>
+                    <li><strong>Real-World Scenarios and Projects</strong>: Apply your knowledge to real-world scenarios
+                        and projects, from automating build processes to deploying scalable applications in the cloud.
+                    </li>
+                </ul>
+
+                <h3>Who Should Enroll:</h3>
+                <ul>
+                    <li>Software developers looking to specialize in DevOps practices.</li>
+                    <li>IT professionals aiming to transition into DevOps roles.</li>
+                    <li>System administrators interested in automating deployment and network operations.</li>
+                    <li>Anyone interested in understanding and implementing DevOps culture, practices, and tools.</li>
+                </ul>
+
+                <h3>Course Format:</h3>
+                <p>This is an online, self-paced course featuring a combination of video lectures, interactive coding
+                    exercises, and extensive project work. Students will have access to a dedicated support forum for
+                    getting help from instructors and engaging with peers, ensuring a comprehensive and interactive
+                    learning experience. Enroll now to begin your journey towards DevOps mastery.</p>
+            </div>
+        </div>
+
+        <div id="modalQA" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalQA')">&times;</span>
+                <h2>Quality Assurance Mastery: Ensuring Software Excellence</h2>
+                <p>Embark on a comprehensive journey to mastering Quality Assurance (QA) practices with our course
+                    designed for individuals aiming to ensure software quality and reliability. From foundational
+                    principles to advanced testing techniques, this course covers the essential aspects of QA to prepare
+                    you for a successful career in software testing and quality assurance.</p>
+
+                <h3>Throughout this course, you will:</h3>
+                <ul>
+                    <li><strong>QA Fundamentals</strong>: Understand the role of QA in the software development
+                        lifecycle, including methodologies, standards, and the mindset required for effective testing.
+                    </li>
+                    <li><strong>Manual Testing Techniques</strong>: Learn various manual testing strategies, including
+                        black-box, white-box, and gray-box testing, to identify software defects.</li>
+                    <li><strong>Automated Testing Tools</strong>: Get hands-on experience with popular automated testing
+                        tools and frameworks like Selenium, JUnit, TestNG, and Cypress for efficient and repeatable
+                        testing.</li>
+                    <li><strong>Test Management and Documentation</strong>: Master test planning, case management, and
+                        effective documentation practices to ensure thorough and organized testing processes.</li>
+                    <li><strong>Performance and Load Testing</strong>: Explore tools and techniques for assessing
+                        software performance, scalability, and reliability under load using tools like JMeter and
+                        LoadRunner.</li>
+                    <li><strong>Security Testing Basics</strong>: Gain insights into basic security testing concepts to
+                        identify vulnerabilities that could compromise software integrity and user data.</li>
+                    <li><strong>Continuous Integration and DevOps</strong>: Understand the role of QA in Continuous
+                        Integration (CI) and DevOps environments, emphasizing automation and collaboration for faster
+                        release cycles.</li>
+                    <li><strong>Agile and Scrum for QA</strong>: Adapt QA practices to Agile and Scrum methodologies,
+                        focusing on flexibility, efficiency, and continuous improvement.</li>
+                    <li><strong>Mobile and Web Application Testing</strong>: Specialize in testing strategies specific
+                        to mobile and web applications, ensuring functionality and user experience across devices and
+                        platforms.</li>
+                    <li><strong>Real-World Projects</strong>: Apply your skills to real-world testing scenarios and
+                        projects, from creating test plans to executing automated test suites.</li>
+                </ul>
+
+                <h3>Who Should Enroll:</h3>
+                <ul>
+                    <li>Aspiring QA professionals looking to start their careers in software testing.</li>
+                    <li>Software developers seeking to broaden their understanding of QA to improve development
+                        practices.</li>
+                    <li>IT professionals aiming to transition into QA roles.</li>
+                    <li>Anyone interested in understanding the principles and practices of software quality assurance.
+                    </li>
+                </ul>
+
+                <h3>Course Format:</h3>
+                <p>This is an online, self-paced course featuring a blend of video lectures, interactive labs,
+                    peer-reviewed assignments, and comprehensive project work. Participants will also have access to a
+                    dedicated support forum for instructor assistance and peer interaction, ensuring a complete and
+                    engaging learning experience. Enroll today to take your first step towards QA mastery.</p>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

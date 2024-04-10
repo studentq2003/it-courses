@@ -1,0 +1,108 @@
+/* Стиль модального окна */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+<<<<<<< HEAD
+    /* Черный фон с небольшой прозрачностью */
+=======
+
+>>>>>>> 66677e9 (first commit)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: modalOpen 1s ease-in;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+
+}
+
+<<<<<<< HEAD
+/* Анимация для модального окна */
+=======
+>>>>>>> 66677e9 (first commit)
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+<<<<<<< HEAD
+/* Стиль контента модального окна */
+=======
+>>>>>>> 66677e9 (first commit)
+.modal-content {
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: #fefefe;
+    border-radius: 6px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scrollbar-width: 1px;
+    margin: 10px;
+}
+
+.modal-content h2,
+.modal-content p,
+.modal-content li {
+    margin: 10px;
+}
+
+/* Для Webkit браузеров (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 4px;
+    /* Ширина полосы прокрутки */
+}
+
+.modal ::-webkit-scrollbar-track {
+    background: #4740de;
+    /* Цвет дорожки скроллбара */
+}
+
+.modal ::-webkit-scrollbar-thumb {
+    background: deeppink;
+    /* Цвет самого скроллера */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Цвет скроллера при наведении */
+}
+
+/* Для Firefox */
+* {
+    scrollbar-width: thin;
+    /* "auto" или "thin" */
+    scrollbar-color: #888 #f1f1f1;
+    /* Цвет скроллера и дорожки */
+}
+
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 170px;
+    right: 130px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

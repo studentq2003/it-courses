@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    color: rgb(13, 13, 14);
+    font-family: fantasy;
+}
+
+header {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+<<<<<<< HEAD
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+=======
+    /* filter: drop-shadow(5px 5px 10px deeppink); */
+>>>>>>> 66677e9 (first commit)
+
+}
+
+.course-block {
+<<<<<<< HEAD
+    border: 2px solid greenyellow;
+=======
+>>>>>>> 66677e9 (first commit)
+    border-radius: 6px;
+    width: 35vmin;
+    height: 30vmin;
+    margin: 10px;
+    margin-bottom: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+<<<<<<< HEAD
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    /* Начальная тень */
+}
+
+/* Базовые стили для контейнеров */
+=======
+}
+
+>>>>>>> 66677e9 (first commit)
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+<<<<<<< HEAD
+    /* Устанавливаем интервалы между блоками */
+    max-width: 90%;
+    margin: 0 auto;
+    /* Центрирование */
+    padding: 20px 0;
+    /* Отступы сверху и снизу */
+=======
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+>>>>>>> 66677e9 (first commit)
+}
+
+.course-block {
+    flex: 1;
+<<<<<<< HEAD
+    /* Элементы тянутся, чтобы занимать доступное пространство */
+    min-width: 280px;
+    /* Минимальная ширина, ниже которой блоки не будут сжиматься */
+    max-width: 1fr;
+    /* Максимальная ширина в соответствии с доступным пространством */
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+=======
+    min-width: 280px;
+    max-width: 1fr;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 10px royalblue;
+>>>>>>> 66677e9 (first commit)
+}
+
+.course-block:hover {
+    transform: translateY(-10px);
+<<<<<<< HEAD
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптируем размеры и расположение блоков для разных разрешений */
+=======
+    box-shadow: 10px 10px 20px deeppink;
+}
+
+>>>>>>> 66677e9 (first commit)
+@media (max-width: 1300px) {
+    .course-container {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .course-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 800px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-block {
+        min-width: 100%;
+    }
+}
+
+
+
+<<<<<<< HEAD
+.course-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+=======
+/* .course-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+} */
+>>>>>>> 66677e9 (first commit)
+
+.course-block img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.description {
+    background-color: #fff;
+    width: 100%;
+    height: 30%;
+
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.description h2,
+.description p {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

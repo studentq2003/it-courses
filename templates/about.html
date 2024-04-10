@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0e1322">
+
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="no-select.css">
+
+    <script src="auth.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="links">
+            <a href="index.html">Start Here</a>
+            <a href="courses/course_main.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+
+        <div class="auth">
+            <a onclick="login()">Login</a>
+            <a class="sign-up" href="sign-up.html">Sign up</a>
+        </div>
+    </nav>
+
+    <div class="auth-window" id="auth-window">
+        <div class="hide" id="hide"></div>
+        <div class="window" id="window">
+            <div class="close-btn-container">
+                <a id="close-log" onclick="hidelogin()">×</a>
+            </div>
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="button-container" style="display: block; margin:10px;">
+                        Dont have an account?
+                        <a href="" id="signup">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <h1>About Us</h1>
+    <div class="about-container">
+        <h2>What is roadmap?</h2>
+        <p><b>roadmap</b> contains community-curated roadmaps, study plans, paths, and resources for developers. There
+            are
+            role-based roadmaps, listing skills you should know for any given role, as well as skill-based roadmaps
+            listing
+            items to learn for any given skill.
+        </p>
+        <p>
+            It started as a set of visual charts on GitHub to guide developers who are confused about what they should
+            learn next, but then expanded into interactive roadmaps where you can click and get resources to learn any
+            given resource, contribute by adding new roadmaps, suggest changes to existing roadmaps, track your progress
+            as you follow a roadmap and so on.
+        </p>
+    </div>
+
+    <div class="about-container">
+        <h2>How are roadmaps created?</h2>
+        <p>project has a strong community that powers everything on the website. It is the 6th most starred
+            opensource project on GitHub and gets visited by hundreds of thousands of developers every month. We
+            also have newsletter with 150,000+ developers. All the roadmaps are created and reviewed by community
+            and several subject matter experts. Also, anyone can suggest changes to any roadmap and we have a
+            process to review and approve them.
+        </p>
+    </div>
+
+    <div class="about-container">
+        <h2>What are the plans for roadmap.sh?</h2>
+        <p>Our long-term plan is to make roadmap.sh a go-to place for developers whenever they plan on learning
+            something new. We started with roadmaps, guides, videos and other visual content but we plan on introducing
+            best practices, best-practices for certain tasks, quizzes to test your knowledge and prepare yourself for
+            the interviews, project ideas to work on while following the roadmaps, public profiles to share your
+            progress and interact with the other learners and so on.
+        </p>
+    </div>
+
+    <div class="about-container">
+        <h2>How is roadmap.sh built??</h2>
+        <p>The website is built with Astro and Tailwind and is deployed to GitHub pages. The project is fully
+            open-source and the codebase can be found on GitHub
+        </p>
+    </div>
+
+    <div class="about-container">
+        <h2>Can I redistribute the content?</h2>
+        <p>No, the license of the content on this website does not allow you to redistribute any of the content on this
+            website anywhere. You can use it for personal use or share the link to the content if you have to but
+            redistribution is not allowed.
+        </p>
+    </div>
+
+</body>
+
+</html>

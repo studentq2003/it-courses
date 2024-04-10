@@ -1,0 +1,54 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.contact-block {
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 6px;
+
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.contact-block:hover {
+    transform: translateY(-10px);
+    border: 2px solid deeppink;
+    box-shadow: 5px 5px 10px deeppink;
+}
+
+.contact-block a {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: blue;
+
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-block a:hover,
+.contact-block p:hover {
+    color: deeppink;
+    transform: translateY(-10px);
+    border: 2px solid deeppink;
+    box-shadow: 5px 5px 10px deeppink;
+}
+
+.contact-block p {
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: blue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}

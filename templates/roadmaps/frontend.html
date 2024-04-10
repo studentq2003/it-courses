@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0e1322">
+
+    <title>Frontend Roadmap</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="roadmap.css">
+    <link rel="stylesheet" href="register.css">
+
+    <link rel="stylesheet" href="../no-select.css">
+
+    <link rel="stylesheet" href="../auth.css">
+    <script src="../auth.js"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="links">
+            <a href="../index.html">Start Here</a>
+<<<<<<< HEAD
+            <a href="">Courses</a>
+            <a href="">About Us</a>
+            <a href="">Contacts</a>
+=======
+            <a href="../courses/course_main.html">Courses</a>
+            <a href="../about.html">About Us</a>
+            <a href="../contacts.html">Contacts</a>
+>>>>>>> 66677e9 (first commit)
+        </div>
+
+        <div class="auth">
+            <a onclick="login()">Login</a>
+            <a class="sign-up" href="../sign-up.html">Sign up</a>
+        </div>
+
+    </nav>
+
+
+    <header>
+        <h1>Frontend Developer</h1>
+        <p>Step by step guide to becoming a modern frontend developer in 2024</p>
+    </header>
+
+    <div class="auth-window" id="auth-window">
+        <div class="hide" id="hide"></div>
+        <div class="window" id="window">
+            <div class="close-btn-container">
+                <a id="close-log" onclick="hidelogin()">×</a>
+            </div>
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="button-container" style="display: block; margin:10px;">
+                        Dont have an account?
+                        <a href="" id="signup">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="roadmap">
+        <div class="stage" id="part1" onclick="toggleContent('part1-content')">
+            <div class="part-block">
+                <h2>Learn basics</h2>
+                <p>HTML & CSS & JavaScript</p>
+                <div class="content" id="part1-content">
+                    <div class="content-block">
+                        <h2>HTML</h2>
+                        <p>HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure
+                            to
+                            the webpage which you can style using CSS and make interactive using JavaScript.
+                        </p>
+                        <a href="https://www.w3schools.com/html/html_intro.asp">W3Schools: Learn HTML</a> <br>
+                        <a href="https://htmlreference.io/">htmlreference.io: All HTML elements at a glance</a> <br>
+                        <a href="https://html.com/">HTML For Beginners The Easy Way</a> <br>
+                        <a href="https://internetingishard.netlify.app/html-and-css/index.html">Web Development
+                            Basics</a>
+                        <br>
+                        <a href="https://www.codecademy.com/learn/learn-html">Codecademy - Learn HTML</a> <br>
+                        <a href="https://github.com/denysdovhan/learnyouhtml">Interactive HTML Course</a> <br>
+                        <a href="https://youtu.be/mJgBOIoGihA">HTML Full Course for Beginners | Complete All-in-One
+                            Tutorial</a> <br>
+                        <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg">HTML Full Course - Build a Website
+                            Tutorial</a> <br>
+                        <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">HTML Tutorial for Beginners: HTML Crash
+                            Course</a> <br>
+                    </div>
+                    <div class="content-block">
+                        <h2>CSS</h2>
+                        <p>CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS
+                            is a
+                            cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                        </p>
+                        <a href="https://www.theodinproject.com//">The Odin Project</a> <br>
+                        <a href="https://flexbox.io/">What The Flexbox!</a> <br>
+                        <a href="https://www.codecademy.com/learn/learn-css">Learn CSS | Codecademy</a> <br>
+                        <a href="https://www.codecademy.com/learn/learn-intermediate-css">Learn Intermediate CSS |
+                            Codecademy</a> <br>
+                        <a href="https://youtu.be/n4R2E7O-Ngo">CSS Complete Course</a> <br>
+                        <a href="https://www.youtube.com/watch?v=yfoY53QXEnI">CSS Crash Course For Absolute
+                            Beginners</a>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=D-h8L5hgW-w">HTML and CSS Tutorial</a> <br>
+                        <a href="https://www.youtube.com/watch?v=FqmB-Zj2-PA">CSS Masterclass - Tutorial & Course for
+                            Beginners</a> <br>
+                        <a href="https://www.w3schools.com/css/">W3Schools — Learn CSS</a> <br>
+                        <a href="https://cssreference.io/">cssreference.io: All CSS properties at a glance</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>JavaScript</h2>
+                        <p>JavaScript allows you to add interactivity to your pages. Common examples that you may have
+                            seen
+                            on the websites are sliders, click interactions, popups and so on.
+                        </p>
+                        <a href="https://roadmap.sh/javascript">Visit Dedicated JavaScript Roadmap</a> <br>
+                        <a href="https://www.w3schools.com/js/">https://www.w3schools.com/js/</a> <br>
+                        <a href="https://javascript.info/">The Modern JavaScript Tutorial</a> <br>
+                        <a href="https://www.javascripttutorial.net/">Learn JavaScript: Covered many topics</a> <br>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+
+        </div>
+        <div class="stage" id="part2" onclick="toggleContent('part2-content')">
+            <div class="part-block">
+                <h2>VCS</h2>
+                <p>PostgreSQL, MySQL, Oracle, MariaDB</p>
+                <div class="content" id="part2-content">
+                    <div class="content-block">
+                        <h2>Git</h2>
+                        <p>Git is a free and open source distributed version control system designed to handle
+                            everything
+                            from small to very large projects with speed and efficiency.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">Git & GitHub Crash Course For
+                            Beginners</a>
+                        <br>
+                        <a href="https://www.atlassian.com/git">Learn Git with Tutorials, News and Tips - Atlassian</a>
+                        <br>
+                        <a href="https://cs.fyi/guide/git-cheatsheet">Git Cheat Sheet</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+
+        </div>
+        <div class="stage" id="part3" onclick="toggleContent('part3-content')">
+            <div class="part-block">
+                <h2>Frontend Frameworks</h2>
+                <p>React, Angular, etc</p>
+                <div class="content" id="part3-content">
+                    <div class="content-block">
+                        <h2>Pick a Framework</h2>
+                        <p>Web frameworks are designed to write web applications. Frameworks are collections of
+                            libraries
+                            that aid in the development of a software product or website. Frameworks for web application
+                            development are collections of various tools. Frameworks vary in their capabilities and
+                            functions, depending on the tasks set. They define the structure, establish the rules, and
+                            provide the development tools required.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=D_MO9vIRBcA">What is the difference between a framework
+                            and
+                            a library?</a> <br>
+                        <a href="https://www.youtube.com/watch?v=cuHDQhDhvPE">Which JS Framework is best?</a> <br>
+                    </div>
+                    <div class="content-block">
+                        <h2>React</h2>
+                        <p>React is the most popular front-end JavaScript library for building user interfaces. React
+                            can
+                            also render on the server using Node and power mobile apps using React Native.
+                        </p>
+                        <p>
+                            Visit the following resources to learn more:
+                        </p>
+                        <a href="https://react.dev/">React Website</a> <br>
+                        <a href="https://react.dev/learn/tutorial-tic-tac-toe">Official Getting Started</a> <br>
+                        <a href="https://egghead.io/courses/the-beginner-s-guide-to-react">The Beginners Guide to
+                            React</a>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=nTeuhbP7wdE">React JS Course for Beginners</a> <br>
+                        <a href="https://www.youtube.com/watch?v=bMknfKXIFA8">React Course - Beginners Tutorial for
+                            React
+                            JavaScript Library [2022]</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="reg-container">
+        <div class="register">
+            <h2>Let's start Frontend Developer career!</h2>
+            <p>Make a form and register to IT course of Frontend Developer</p>
+
+            <div class="reg-block">
+                <p>Your first name:</p>
+                <input type="text" name="" id="firstname">
+            </div>
+            <div class="reg-block">
+                <p>Your last name:</p>
+                <input type="text" name="" id="lastname">
+            </div>
+
+            <div class="reg-block">
+                <p>Your mail:</p>
+                <input type="text" name="" id="mail">
+            </div>
+
+            <div class="reg-block">
+                <p>Select your lvl:</p>
+                <select name="lvl" id="frontend-lvl">
+                    <option value="junior">junior</option>
+                    <option value="middle">middle</option>
+                    <option value="middlep">middle+</option>
+                    <option value="senior">senior</option>
+                </select>
+            </div>
+
+            <a id="reg-button" align="center" href="">Register</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color: azure;
+}
+
+.about-container {
+    background-color: aliceblue;
+    width: 80%;
+    min-height: 200px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    text-align: justify;
+    border: 2px solid rgb(130, 94, 113);
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgb(108, 95, 102);
+
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-container:hover {
+    transform: translateY(-20px);
+
+    border: 2px solid deeppink;
+    box-shadow: 5px 5px 10px deeppink;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0e1322">
+    <title>Backend Roadmap</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="roadmap.css">
+    <link rel="stylesheet" href="register.css">
+
+    <link rel="stylesheet" href="../no-select.css">
+
+    <link rel="stylesheet" href="../auth.css">
+    <script src="../auth.js"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- navigation + auth block -->
+    <nav>
+        <div class="links">
+            <a href="../index.html">Start Here</a>
+<<<<<<< HEAD
+            <a href="">Courses</a>
+            <a href="">About Us</a>
+            <a href="">Contacts</a>
+=======
+            <a href="../courses/course_main.html">Courses</a>
+            <a href="../about.html">About Us</a>
+            <a href="../contacts.html">Contacts</a>
+>>>>>>> 66677e9 (first commit)
+        </div>
+
+        <div class="auth">
+            <a onclick="login()">Login</a>
+            <a class="sign-up" href="../sign-up.html">Sign up</a>
+        </div>
+
+    </nav>
+
+
+    <header>
+        <h1>Backend Developer</h1>
+        <p>Step by step guide to becoming a modern backend developer in 2024</p>
+
+    </header>
+
+    <!-- auth window -->
+    <div class="auth-window" id="auth-window">
+        <div class="hide" id="hide"></div>
+        <div class="window" id="window">
+            <div class="close-btn-container">
+                <a id="close-log" onclick="hidelogin()">×</a>
+            </div>
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="button-container" style="display: block; margin:10px;">
+                        Dont have an account?
+                        <a href="" id="signup">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="roadmap">
+        <div class="stage" id="part1" onclick="toggleContent('part1-content')">
+            <div class="part-block">
+                <h2>Learn a Language</h2>
+                <p>Python, Go, JavaScript</p>
+                <div class="content" id="part1-content">
+                    <div class="content-block">
+                        <p>Even if you’re a beginner the least you would have known is that Web Development is majorly
+                            classified into two facets: Frontend Development and Backend Development. And obviously,
+                            they
+                            both have their respective set of tools and technologies. For instance, when we talk about
+                            Frontend Development, there always comes 3 names first and foremost – HTML, CSS, and
+                            JavaScript.
+
+                            In the same way, when it comes to Backend Web Development – we primarily require a backend
+                            (or
+                            you can say server-side) programming language to make the website function along with
+                            various
+                            other tools & technologies such as databases, frameworks, web servers, etc.
+
+                            Pick a language from the given list and make sure to learn its quirks, core details about
+                            its
+                            runtime e.g. concurrency, memory model etc.
+                        </p>
+                    </div>
+                    <div class="content-block">
+                        <h2>Python</h2>
+                        <p>Python is a well known programming language which is both a strongly typed and a dynamically
+                            typed
+                            language. Being an interpreted language, code is executed as soon as it is written and the
+                            Python
+                            syntax allows for writing code in functional, procedural or object-oriented programmatic
+                            ways.
+                        </p>
+                        <a href="https://python.org">Learn more about python on official site</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>Go</h2>
+                        <p>Go is an open source programming language supported by Google. Go can be used to write cloud
+                            services, CLI tools, used for API development, and much more.
+                        </p>
+                        <a href="https://go.dev">Learn more about Go on official site</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>JavaScript</h2>
+                        <p>Java is general-purpose language, primarily used for Internet-based applications. It was
+                            created
+                            in 1995 by James Gosling at Sun Microsystems and is one of the most popular options for
+                            backend
+                            developers.
+                        </p>
+                        <a href="https://www.java.com/">Learn more about Go on official site</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+
+        </div>
+        <div class="stage" id="part2" onclick="toggleContent('part2-content')">
+            <div class="part-block">
+                <h2>Relational Databases</h2>
+                <p>PostgreSQL, MySQL, Oracle, MariaDB</p>
+                <div class="content" id="part2-content">
+                    <div class="content-block">
+                        <h2>PostgreSQL</h2>
+                        <p>PostgreSQL, also known as Postgres, is a free and open-source relational database management
+                            system emphasizing extensibility and SQL compliance.
+                        </p>
+                        <a href="https://www.postgresql.org/">Official website</a> <br>
+                        <a href="https://www.geeksforgeeks.org/what-is-postgresql-introduction/">What is PostgreSQL</a>
+                        <br>
+                        <a href="https://www.postgresqltutorial.com/">Learn PostgreSQL - Full Tutorial for Beginners</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+        </div>
+        <div class="stage" id="part3" onclick="toggleContent('part3-content')">
+            <div class="part-block">
+                <h2>Learn about APIs</h2>
+                <p>Rest, JSON APIs, JWT, Token Auth, OAuth</p>
+                <div class="content" id="part3-content">
+                    <div class="content-block">
+                        <h2>Rest</h2>
+                        <p>REST, or REpresentational State Transfer, is an architectural style for providing standards
+                            between computer systems on the web, making it easier for systems to communicate with each
+                            other.
+                        </p>
+                        <a href="https://www.codecademy.com/article/what-is-rest">What is REST?</a> <br>
+                        <a href="https://dev.to/cassiocappellari/fundamentals-of-rest-api-2nag">REST Fundamental</a>
+                        <br>
+                        <a href="https://restapitutorial.com/">Learn REST – A RESTful Tutorial</a>
+                    </div>
+                    <div class="content-block">
+                        <h2>JSON APIs</h2>
+                        <p>JSON or JavaScript Object Notation is an encoding scheme that is designed to eliminate the
+                            need
+                            for an ad-hoc code for each application to communicate with servers that communicate in a
+                            defined way. JSON API module exposes an implementation for data stores and data structures,
+                            such
+                            as entity types, bundles, and fields.
+                        </p>
+                        <a href="https://jsonapi.org/">Official website</a> <br>
+                        <a href="https://jsonapi.org/implementations/">Official docs</a> <br>
+                        <a href="https://www.youtube.com/watch?v=N-4prIh7t38">JSON API: Explained in 4 minutes</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="../content/arrow.png" alt="arrow">
+            </div>
+        </div>
+    </div>
+
+    <!-- link form -->
+    <div class="reg-container">
+        <div class="register">
+            <h2>Let's start Backend Developer career!</h2>
+            <p>Make a form and register to IT course of Backend Developer</p>
+
+            <div class="reg-block">
+                <p>Your first name:</p>
+                <input type="text" name="" id="firstname">
+            </div>
+            <div class="reg-block">
+                <p>Your last name:</p>
+                <input type="text" name="" id="lastname">
+            </div>
+
+            <div class="reg-block">
+                <p>Your mail:</p>
+                <input type="text" name="" id="mail">
+            </div>
+
+            <div class="reg-block">
+                <p>Select your lvl:</p>
+                <select name="lvl" id="frontend-lvl">
+                    <option value="junior">junior</option>
+                    <option value="middle">middle</option>
+                    <option value="middlep">middle+</option>
+                    <option value="senior">senior</option>
+                </select>
+            </div>
+
+            <a id="reg-button" align="center" href="">Register</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
