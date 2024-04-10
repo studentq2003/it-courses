@@ -8,25 +8,15 @@
     text-align: justify;
     margin-top: 10px;
     margin-bottom: 10px;
-<<<<<<< HEAD
-    background-color:azure;
-=======
     background-color: azure;
->>>>>>> 66677e9 (first commit)
 }
 
 .content div {
     margin: 10px;
 }
 
-<<<<<<< HEAD
-/* Стиль для раскрытого контента */
-.expanded {
-    max-height: 800px; /* Максимальная высота контента */
-=======
 .expanded {
     max-height: 800px;
->>>>>>> 66677e9 (first commit)
 }
 
 .content-block a,
@@ -36,14 +26,6 @@
 }
 
 .flipped {
-<<<<<<< HEAD
-    transform: scaleY(-1); /* Отражает изображение по горизонтали */
-}
-
-img {
-    transition: transform 1s ease; /* Анимация для плавности поворота стрелки */
-}
-=======
     transform: scaleY(-1);
 }
 
@@ -63,4 +45,3 @@ img {
     border: 2px solid deeppink;
     box-shadow: 5px 5px 10px deeppink;
 }
->>>>>>> 66677e9 (first commit)

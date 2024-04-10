@@ -1,4 +1,3 @@
-/* Стиль модального окна */
 .modal {
     position: fixed;
     z-index: 1;
@@ -8,11 +7,6 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-<<<<<<< HEAD
-    /* Черный фон с небольшой прозрачностью */
-=======
-
->>>>>>> 66677e9 (first commit)
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,10 +17,6 @@
 
 }
 
-<<<<<<< HEAD
-/* Анимация для модального окна */
-=======
->>>>>>> 66677e9 (first commit)
 @keyframes modalOpen {
     from {
         opacity: 0;
@@ -37,10 +27,6 @@
     }
 }
 
-<<<<<<< HEAD
-/* Стиль контента модального окна */
-=======
->>>>>>> 66677e9 (first commit)
 .modal-content {
     max-height: 500px;
     overflow-y: scroll;
@@ -60,33 +46,25 @@
     margin: 10px;
 }
 
-/* Для Webkit браузеров (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
     width: 4px;
-    /* Ширина полосы прокрутки */
 }
 
 .modal ::-webkit-scrollbar-track {
     background: #4740de;
-    /* Цвет дорожки скроллбара */
 }
 
 .modal ::-webkit-scrollbar-thumb {
     background: deeppink;
-    /* Цвет самого скроллера */
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-    /* Цвет скроллера при наведении */
 }
 
-/* Для Firefox */
 * {
     scrollbar-width: thin;
-    /* "auto" или "thin" */
     scrollbar-color: #888 #f1f1f1;
-    /* Цвет скроллера и дорожки */
 }
 
 

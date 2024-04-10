@@ -27,19 +27,11 @@ nav {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-<<<<<<< HEAD
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
-=======
     /* filter: drop-shadow(5px 5px 10px deeppink); */
->>>>>>> 66677e9 (first commit)
 
 }
 
 .course-block {
-<<<<<<< HEAD
-    border: 2px solid greenyellow;
-=======
->>>>>>> 66677e9 (first commit)
     border-radius: 6px;
     width: 35vmin;
     height: 30vmin;
@@ -51,71 +43,33 @@ nav {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-<<<<<<< HEAD
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    /* Начальная тень */
 }
 
-/* Базовые стили для контейнеров */
-=======
-}
-
->>>>>>> 66677e9 (first commit)
 .course-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-<<<<<<< HEAD
-    /* Устанавливаем интервалы между блоками */
-    max-width: 90%;
-    margin: 0 auto;
-    /* Центрирование */
-    padding: 20px 0;
-    /* Отступы сверху и снизу */
-=======
     max-width: 90%;
     margin: 0 auto;
     padding: 20px 0;
->>>>>>> 66677e9 (first commit)
 }
 
 .course-block {
     flex: 1;
-<<<<<<< HEAD
-    /* Элементы тянутся, чтобы занимать доступное пространство */
-    min-width: 280px;
-    /* Минимальная ширина, ниже которой блоки не будут сжиматься */
-    max-width: 1fr;
-    /* Максимальная ширина в соответствии с доступным пространством */
-    border-radius: 6px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-=======
     min-width: 280px;
     max-width: 1fr;
     border-radius: 6px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 5px 5px 10px royalblue;
->>>>>>> 66677e9 (first commit)
 }
 
 .course-block:hover {
     transform: translateY(-10px);
-<<<<<<< HEAD
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Адаптируем размеры и расположение блоков для разных разрешений */
-=======
     box-shadow: 10px 10px 20px deeppink;
 }
 
->>>>>>> 66677e9 (first commit)
 @media (max-width: 1300px) {
     .course-container {
         max-width: 85%;
@@ -138,20 +92,6 @@ nav {
         min-width: 100%;
     }
 }
-
-
-
-<<<<<<< HEAD
-.course-block:hover {
-    transform: translateY(-10px);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-}
-=======
-/* .course-block:hover {
-    transform: translateY(-10px);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-} */
->>>>>>> 66677e9 (first commit)
 
 .course-block img {
     width: 100%;
